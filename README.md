@@ -1,6 +1,6 @@
 # Homography Estimation using Supervised and Unsupervised Deep Learning
 
-This repository contains code which performs homography estimation for image patches/pairs which are either **low resolution** or have **less reliable features**, for whom the traditional method of finding homography using feature extraction and matching would fail. The code is inspired from the following paper: [Link](https://arxiv.org/pdf/1606.03798).
+This repository contains code which performs homography estimation for image patches/pairs which are either **low resolution** or have **less reliable features**, for whom the traditional method of finding homography using feature extraction and matching would fail.
 
 ## Supervised Learning Approach
 
@@ -49,3 +49,11 @@ The overall unsupervised learning approach is shown below:
 <p align='center'>
     <img src="images/unsup_struct.png" alt="drawing" width="400"/>
 </p>
+
+### Results
+Although the training MSE loss reduced steadily during training, the value of the MSE loss was overall high since it is relatively tough to train an unsupervised model and reduce loss to a loew value. Since we are directly outputting the warped image using the network, significant tuning and more time would be required to train the network for better results.
+
+## References
+This implementation is based on the following papers:
+- DeTone, D., Malisiewicz, T., & Rabinovich, A. (2016). Deep image homography estimation.[Link](https://arxiv.org/pdf/1606.03798)
+- Nguyen, T., Chen, S. W., Shivakumar, S. S., Taylor, C. J., & Kumar, V. (2017). Unsupervised deep homography: A fast and robust homography estimation model. [Link](https://arxiv.org/abs/1709.03966)
