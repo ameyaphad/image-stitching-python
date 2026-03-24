@@ -30,7 +30,7 @@ the yellow box represents the patch predicted from the network, and
 the red box represents the patch obtained using the traditional approach.
 
 <p align='center'>
-    <img src="images/sup_output_2_499.png" alt="drawing" width="800"/>
+    <img src="images/sup_output_2_499.png" alt="drawing" width="200"/>
 </p>
 
 The 4 point homography predicted can be converted to a **homography matrix** for **image stitching** purposes using **Direct Linear Transform (DLT)**.
@@ -47,5 +47,5 @@ For the TensorDLT module, homograhphy computation is done using the Kornia libra
 
 The overall unsupervised learning approach is shown below:
 <p align='center'>
-    <img src="images/unsup_struct.png" alt="drawing" width="800"/>
+    <img src="images/unsup_struct.png" alt="drawing" width="400"/>
 </p>
