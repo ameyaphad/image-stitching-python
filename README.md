@@ -18,7 +18,7 @@ The pipeline is shown in the image:
 ### Training the CNN
 Neural Network Structure:
 <p align='center'>
-    <img src="images/sup_struct.png" alt="drawing" width="800"/>
+    <img src="images/sup_struct.png" alt="drawing" width="400"/>
 </p>
 
 ### Results
